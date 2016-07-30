@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remove-project name="platform/external/libnfc-nci" />
+<remove-project name="platform/external/toybox" />
+<remove-project name="platform/hardware/broadcom/libbt" />
+<remove-project name="platform/hardware/qcom/camera" />
+<remove-project name="platform/hardware/qcom/display" />
+<remove-project name="platform/hardware/qcom/keymaster" />
+
+<!-- marshmallow-dr1.6-release is based on LA.BF64.1.2.2_rb4.7 -->
+<project path="device/sony/common-headers" name="sonyxperiadev/device-sony-common-headers" remote="github" revision="aosp/LA.BF64.1.2.2_rb4.7" />
+<project path="kernel/sony/msm"            name="Contortrix/kernel-sony-msm"               remote="github" />
+
+<!-- Sepolicy -->
+<project path="device/qcom/sepolicy" name="Contortrix/device-qcom-sepolicy" remote="github" />
+<project path="device/sony/sepolicy" name="Contortrix/device-sony-sepolicy" remote="github" />
+
+<!-- Common -->
+<project path="contortrix"           name="Contortrix/contortrix"              remote="github" >
+    <copyfile src="bld.sh" dest="bld.sh" />
+</project>
+
+<project path="device/sony/common"   name="Contortrix/device-sony-common"      remote="github" />
+<project path="device/sony/kitakami" name="sonyxperiadev/device-sony-kitakami" remote="github" revision="master" />
+<project path="device/sony/shinano"  name="sonyxperiadev/device-sony-shinano"  remote="github" revision="master" />
+<project path="device/sony/rhine"    name="sonyxperiadev/device-sony-rhine"    remote="github" revision="master" />
+
+<!-- Kitakami -->
+<project path="device/sony/satsuki"     name="sonyxperiadev/device-sony-satsuki"     remote="github" revision="master" />
+<project path="device/sony/sumire"      name="sonyxperiadev/device-sony-sumire"      remote="github" revision="master" />
+<project path="device/sony/suzuran"     name="sonyxperiadev/device-sony-suzuran"     remote="github" revision="master" />
+<project path="device/sony/ivy"         name="sonyxperiadev/device-sony-ivy"         remote="github" revision="master" />
+<project path="device/sony/karin"       name="sonyxperiadev/device-sony-karin"       remote="github" revision="master" />
+<project path="device/sony/karin_windy" name="sonyxperiadev/device-sony-karin_windy" remote="github" revision="master" />
+
+<!-- Shinano -->
+<project path="device/sony/leo"            name="sonyxperiadev/device-sony-leo"            remote="github" revision="master" />
+<project path="device/sony/aries"          name="sonyxperiadev/device-sony-aries"          remote="github" revision="master" />
+<project path="device/sony/sirius"         name="sonyxperiadev/device-sony-sirius"         remote="github" revision="master" />
+<project path="device/sony/scorpion"       name="sonyxperiadev/device-sony-scorpion"       remote="github" revision="master" />
+<project path="device/sony/scorpion_windy" name="sonyxperiadev/device-sony-scorpion_windy" remote="github" revision="master" />
+<project path="device/sony/castor"         name="sonyxperiadev/device-sony-castor"         remote="github" revision="master" />
+<project path="device/sony/castor_windy"   name="sonyxperiadev/device-sony-castor_windy"   remote="github" revision="master" />
+
+<!-- Rhine -->
+<project path="device/sony/honami" name="sonyxperiadev/device-sony-honami" remote="github" revision="master" />
+<project path="device/sony/amami"  name="sonyxperiadev/device-sony-amami"  remote="github" revision="master" />
+<project path="device/sony/togari" name="sonyxperiadev/device-sony-togari" remote="github" revision="master" />
+
+<!-- Hardware -->
+<project path="external/libnfc-nci"        name="Contortrix/external-libnfc-nci"        remote="github" />
+<project path="external/toybox"            name="Contortrix/external-toybox"            remote="github" />
+<project path="hardware/broadcom/libbt"    name="Contortrix/hardware-broadcom-libbt"    remote="github" />
+<project path="hardware/qcom/camera"       name="Contortrix/hardware-qcom-camera"       remote="github" />
+<project path="hardware/qcom/display"      name="Contortrix/hardware-qcom-display"      remote="github" />
+<project path="hardware/qcom/keymaster"    name="Contortrix/hardware-qcom-keymaster"    remote="github" />
+<project path="hardware/sony/dataservices" name="Contortrix/hardware-sony-dataservices" remote="github" />
+<project path="hardware/sony/init"         name="Contortrix/hardware-sony-init"         remote="github" />
+<project path="hardware/sony/thermanager"  name="sonyxperiadev/thermanager"             remote="github" revision="master" />
+<project path="hardware/sony/macaddrsetup" name="sonyxperiadev/macaddrsetup"            remote="github" revision="master" />
+<project path="hardware/sony/timekeep"     name="sonyxperiadev/timekeep"                remote="github" revision="master" />
+
+<!-- SuperBenevolent proprietary blobs -->
+<project path="vendor/qcom/firmware" name="SuperBenevolent/aosp-vendor-qcom-firmware" remote="github" revision="master" />
+<project path="vendor/qcom/prebuilt" name="SuperBenevolent/aosp-vendor-qcom-prebuilt" remote="github" revision="marshmallow-mr0" />
+<project path="vendor/sony"          name="SuperBenevolent/aosp-vendor-sony"          remote="github" revision="marshmallow-mr0" />
+</manifest>
