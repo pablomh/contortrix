@@ -5,7 +5,20 @@
 
 XPERIA_DATE=$(date -u +%Y%m%d)
 
-case $1 in
+BUILDCODE=$1
+BUILDTYPE="userdebug"
+
+if [[ $1 =~ .*user.* ]]; then
+    BUILDCODE=${1::-5}
+    BUILDTYPE="user"
+fi
+
+if [[ $1 =~ .*eng.* ]]; then
+    BUILDCODE=${1::-4}
+    BUILDTYPE="eng"
+fi
+
+case $BUILDCODE in
 
     # Loire Devices
     "suzu")
@@ -72,7 +85,7 @@ case $1 in
         ;;
 
     *)
-        echo "Wait, what? \"$1\" is not a valid build target!"
+        echo "Wait, what? \"$BUILDCODE\" is not a valid build target!"
         echo ""
         exit -1
     ;;
@@ -89,16 +102,16 @@ export DISPLAY_BUILD_NUMBER=true
 export ANDROID_HOME=~/android-sdk-linux/
 
 # Initialize the device
-lunch $XPERIA_TARGET-userdebug
+lunch $XPERIA_TARGET-$BUILDTYPE
 
 # Make ALL the things!
 make $2 -j$((CORE_COUNT + 2))
 
 if [ -f out/dist/$XPERIA_TARGET-img-*.zip ]; then
-    echo "Copying $1-CopperheadOS-$XPERIA_DATE.zip to ~/IMG"
+    echo "Copying $BUILDCODE-CopperheadOS-$XPERIA_DATE.zip to ~/IMG"
     echo ""
-    rm ~/IMG/$1-CopperheadOS-*.zip
+    rm ~/IMG/$BUILDCODE-CopperheadOS-*.zip
     # Actually we're doing a hard link so we can immediately
     # remove the $OUT folder and build another device.
-    ln out/dist/$XPERIA_TARGET-img-*.zip ~/IMG/$1-CopperheadOS-$XPERIA_DATE.zip
+    ln out/dist/$XPERIA_TARGET-img-*.zip ~/IMG/$BUILDCODE-CopperheadOS-$XPERIA_DATE.zip
 fi
