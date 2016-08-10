@@ -2,7 +2,7 @@
 <manifest>
 
 <remove-project name="copperheados/platform_external_chromium" />
-<remove-project name="copperheados/platform_external_SMSSecure" />
+<remove-project name="copperheados/platform_external_Silence" />
 <remove-project name="copperheados/platform_packages_apps_F-Droid" />
 
 <remote name="opengapps" fetch="https://github.com/opengapps/"  />
