@@ -50,40 +50,6 @@ case $BUILDCODE in
         XPERIA_TARGET=aosp_e2303
         ;;
 
-    # Shinano Devices
-    "leo")
-        XPERIA_TARGET=aosp_d6603
-        ;;
-    "aries")
-        XPERIA_TARGET=aosp_d5803
-        ;;
-    "sirius")
-        XPERIA_TARGET=aosp_d6503
-        ;;
-    "scorpion")
-        XPERIA_TARGET=aosp_sgp621
-        ;;
-    "scorpion_windy")
-        XPERIA_TARGET=aosp_sgp611
-        ;;
-    "castor")
-        XPERIA_TARGET=aosp_sgp521
-        ;;
-    "castor_windy")
-        XPERIA_TARGET=aosp_sgp511
-        ;;
-
-    # Rhine Devices
-    "honami")
-        XPERIA_TARGET=aosp_c6903
-        ;;
-    "amami")
-        XPERIA_TARGET=aosp_d5503
-        ;;
-    "togari")
-        XPERIA_TARGET=aosp_c6833
-        ;;
-
     *)
         echo "Wait, what? \"$BUILDCODE\" is not a valid build target!"
         echo ""

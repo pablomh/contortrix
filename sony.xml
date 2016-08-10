@@ -21,32 +21,15 @@
     <copyfile src="bld.sh" dest="bld.sh" />
 </project>
 
-<project path="device/sony/common"   name="Contortrix/device-sony-common"      remote="github" />
-<project path="device/sony/kitakami" name="sonyxperiadev/device-sony-kitakami" remote="github" revision="master" />
-<project path="device/sony/shinano"  name="sonyxperiadev/device-sony-shinano"  remote="github" revision="master" />
-<project path="device/sony/rhine"    name="sonyxperiadev/device-sony-rhine"    remote="github" revision="master" />
-
 <!-- Kitakami -->
+<project path="device/sony/common"      name="Contortrix/device-sony-common"         remote="github" />
+<project path="device/sony/kitakami"    name="sonyxperiadev/device-sony-kitakami"    remote="github" revision="master" />
 <project path="device/sony/satsuki"     name="sonyxperiadev/device-sony-satsuki"     remote="github" revision="master" />
 <project path="device/sony/sumire"      name="sonyxperiadev/device-sony-sumire"      remote="github" revision="master" />
 <project path="device/sony/suzuran"     name="sonyxperiadev/device-sony-suzuran"     remote="github" revision="master" />
 <project path="device/sony/ivy"         name="sonyxperiadev/device-sony-ivy"         remote="github" revision="master" />
 <project path="device/sony/karin"       name="sonyxperiadev/device-sony-karin"       remote="github" revision="master" />
 <project path="device/sony/karin_windy" name="sonyxperiadev/device-sony-karin_windy" remote="github" revision="master" />
-
-<!-- Shinano -->
-<project path="device/sony/leo"            name="sonyxperiadev/device-sony-leo"            remote="github" revision="master" />
-<project path="device/sony/aries"          name="sonyxperiadev/device-sony-aries"          remote="github" revision="master" />
-<project path="device/sony/sirius"         name="sonyxperiadev/device-sony-sirius"         remote="github" revision="master" />
-<project path="device/sony/scorpion"       name="sonyxperiadev/device-sony-scorpion"       remote="github" revision="master" />
-<project path="device/sony/scorpion_windy" name="sonyxperiadev/device-sony-scorpion_windy" remote="github" revision="master" />
-<project path="device/sony/castor"         name="sonyxperiadev/device-sony-castor"         remote="github" revision="master" />
-<project path="device/sony/castor_windy"   name="sonyxperiadev/device-sony-castor_windy"   remote="github" revision="master" />
-
-<!-- Rhine -->
-<project path="device/sony/honami" name="sonyxperiadev/device-sony-honami" remote="github" revision="master" />
-<project path="device/sony/amami"  name="sonyxperiadev/device-sony-amami"  remote="github" revision="master" />
-<project path="device/sony/togari" name="sonyxperiadev/device-sony-togari" remote="github" revision="master" />
 
 <!-- Hardware -->
 <project path="external/libnfc-nci"        name="Contortrix/external-libnfc-nci"        remote="github" />
