@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remove-project name="platform/external/libnfc-nci" />
 <remove-project name="platform/external/toybox" />
-<remove-project name="platform/hardware/broadcom/libbt" />
 <remove-project name="platform/hardware/qcom/camera" />
 <remove-project name="platform/hardware/qcom/display" />
 <remove-project name="platform/hardware/qcom/keymaster" />
@@ -17,7 +15,9 @@
 <project path="kernel/sony/msm"            name="Contortrix/kernel-sony-msm"               remote="github" />
 
 <!-- Sepolicy -->
+<!--
 <project path="device/qcom/sepolicy" name="Contortrix/device-qcom-sepolicy" remote="github" />
+-->
 <project path="device/sony/sepolicy" name="Contortrix/device-sony-sepolicy" remote="github" />
 
 <!-- Common -->
@@ -27,7 +27,7 @@
 
 <!-- Kitakami -->
 <project path="device/sony/common"      name="Contortrix/device-sony-common"         remote="github" />
-<project path="device/sony/kitakami"    name="sonyxperiadev/device-sony-kitakami"    remote="github" revision="master" />
+<project path="device/sony/kitakami"    name="Contortrix/device-sony-kitakami"       remote="github" />
 <project path="device/sony/satsuki"     name="sonyxperiadev/device-sony-satsuki"     remote="github" revision="master" />
 <project path="device/sony/sumire"      name="sonyxperiadev/device-sony-sumire"      remote="github" revision="master" />
 <project path="device/sony/suzuran"     name="sonyxperiadev/device-sony-suzuran"     remote="github" revision="master" />
@@ -36,9 +36,7 @@
 <project path="device/sony/karin_windy" name="sonyxperiadev/device-sony-karin_windy" remote="github" revision="master" />
 
 <!-- Hardware -->
-<project path="external/libnfc-nci"        name="Contortrix/external-libnfc-nci"        remote="github" />
 <project path="external/toybox"            name="Contortrix/external-toybox"            remote="github" />
-<project path="hardware/broadcom/libbt"    name="Contortrix/hardware-broadcom-libbt"    remote="github" />
 <project path="hardware/qcom/camera"       name="Contortrix/hardware-qcom-camera"       remote="github" />
 <project path="hardware/qcom/display"      name="Contortrix/hardware-qcom-display"      remote="github" />
 <project path="hardware/qcom/keymaster"    name="Contortrix/hardware-qcom-keymaster"    remote="github" />
