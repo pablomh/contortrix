@@ -48,8 +48,9 @@
 <project path="hardware/sony/macaddrsetup" name="sonyxperiadev/macaddrsetup"            remote="github" revision="master" />
 <project path="hardware/sony/timekeep"     name="sonyxperiadev/timekeep"                remote="github" revision="master" />
 
-<!-- SuperBenevolent proprietary blobs -->
-<project path="vendor/qcom/firmware" name="SuperBenevolent/aosp-vendor-qcom-firmware" remote="github" revision="master" />
-<project path="vendor/qcom/prebuilt" name="SuperBenevolent/aosp-vendor-qcom-prebuilt" remote="github" revision="m-mr1" />
-<project path="vendor/sony"          name="SuperBenevolent/aosp-vendor-sony"          remote="github" revision="m-mr1" />
+<!-- Contortrix proprietary blobs for /oem as vendor -->
+<project path="vendor/qcom/prebuilt"    name="Contortrix/vendor-qcom-prebuilt"    remote="github" />
+<project path="vendor/qcom/proprietary" name="Contortrix/vendor-qcom-proprietary" remote="github" />
+<project path="vendor/sony"             name="Contortrix/vendor-sony"             remote="github" />
+
 </manifest>
