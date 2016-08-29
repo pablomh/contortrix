@@ -21,6 +21,7 @@
 <project path="device/sony/sepolicy" name="Contortrix/device-sony-sepolicy" remote="github" />
 
 <!-- Common -->
+<project path="device/sony/common-init" name="sonyxperiadev/device-sony-common-init" remote="github" revision="master" />
 <project path="contortrix"           name="Contortrix/contortrix"              remote="github" >
     <copyfile src="bld.sh" dest="bld.sh" />
 </project>
@@ -41,7 +42,6 @@
 <project path="hardware/qcom/display"      name="Contortrix/hardware-qcom-display"      remote="github" />
 <project path="hardware/qcom/keymaster"    name="Contortrix/hardware-qcom-keymaster"    remote="github" />
 <project path="hardware/sony/dataservices" name="Contortrix/hardware-sony-dataservices" remote="github" />
-<project path="hardware/sony/init"         name="Contortrix/hardware-sony-init"         remote="github" />
 <project path="hardware/sony/thermanager"  name="sonyxperiadev/thermanager"             remote="github" revision="master" />
 <project path="hardware/sony/macaddrsetup" name="sonyxperiadev/macaddrsetup"            remote="github" revision="master" />
 <project path="hardware/sony/timekeep"     name="sonyxperiadev/timekeep"                remote="github" revision="master" />
