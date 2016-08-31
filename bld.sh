@@ -63,7 +63,7 @@ CORE_COUNT=`grep processor /proc/cpuinfo | wc -l`
 source build/envsetup.sh
 export LANG=C
 unset _JAVA_OPTIONS
-export BUILD_NUMBER=$(date --utc +%Y.%m.%d.%H.%M.%S)
+export BUILD_NUMBER=$XPERIA_DATE
 export DISPLAY_BUILD_NUMBER=true
 export ANDROID_HOME=~/android-sdk-linux/
 
