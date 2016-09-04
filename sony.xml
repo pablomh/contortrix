@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+<remote  name="github-ssh"
+         fetch="ssh://git@github.com:"
+         revision="refs/heads/nougat-release" />
+
 <remove-project name="platform/external/toybox" />
 <remove-project name="platform/hardware/qcom/camera" />
 <remove-project name="platform/hardware/qcom/display" />
