@@ -26,7 +26,8 @@
 
 <!-- Common -->
 <project path="device/sony/common-init" name="sonyxperiadev/device-sony-common-init" remote="github" revision="master" />
-<project path="contortrix"           name="Contortrix/contortrix"              remote="github" >
+<project path="contortrix"              name="Contortrix/contortrix"                 remote="github" >
+    <copyfile src="a2a.sh" dest="a2a.sh" />
     <copyfile src="bld.sh" dest="bld.sh" />
 </project>
 
