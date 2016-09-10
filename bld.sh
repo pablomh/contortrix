@@ -54,7 +54,19 @@ case $BUILDCODE in
         echo "Wait, what? \"$BUILDCODE\" is not a valid build target!"
         echo ""
         exit -1
-    ;;
+        ;;
+esac
+
+case $2 in
+
+    # Installclean doesn't clean the dist folder
+    "installclean")
+        rm -rf out/dist/*
+        ;;
+
+    *)
+        # Nothing special, do nothing
+        ;;
 esac
 
 CORE_COUNT=`grep processor /proc/cpuinfo | wc -l`
