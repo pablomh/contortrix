@@ -13,6 +13,7 @@
 <remove-project name="platform/hardware/qcom/display" />
 <remove-project name="platform/hardware/qcom/keymaster" />
 <remove-project name="platform/hardware/qcom/media" />
+<remove-project name="platform/hardware/qcom/power" />
 
 <!-- Material Music -->
 <remove-project name="copperheados/platform_packages_apps_Music" />
@@ -50,6 +51,7 @@
 <project path="hardware/qcom/display"      name="Contortrix/hardware-qcom-display"      remote="github" />
 <project path="hardware/qcom/keymaster"    name="Contortrix/hardware-qcom-keymaster"    remote="github" />
 <project path="hardware/qcom/media"        name="Contortrix/hardware-qcom-media"        remote="github" />
+<project path="hardware/qcom/power"        name="Contortrix/hardware-qcom-power"        remote="github" />
 <project path="hardware/sony/dataservices" name="Contortrix/hardware-sony-dataservices" remote="github" />
 
 <!-- Sony Hardware -->
