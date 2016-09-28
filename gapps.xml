@@ -2,6 +2,7 @@
 <manifest>
 
 <remove-project name="copperheados/platform_external_chromium" />
+<remove-project name="copperheados/platform_external_chromium-webview" />
 <remove-project name="copperheados/platform_external_Silence" />
 <remove-project name="copperheados/platform_packages_apps_F-Droid" />
 
