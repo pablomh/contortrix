@@ -27,6 +27,11 @@
     <copyfile src="bld.sh" dest="bld.sh" />
 </project>
 
+<!-- Loire -->
+<project path="device/sony/loire" name="Contortrix/device-sony-loire"   remote="github" />
+<project path="device/sony/kugo"  name="sonyxperiadev/device-sony-kugo" remote="github" revision="master" />
+<project path="device/sony/suzu"  name="sonyxperiadev/device-sony-suzu" remote="github" revision="master" />
+
 <!-- Kitakami -->
 <project path="device/sony/kitakami"    name="Contortrix/device-sony-kitakami"       remote="github" />
 <project path="device/sony/satsuki"     name="sonyxperiadev/device-sony-satsuki"     remote="github" revision="master" />
