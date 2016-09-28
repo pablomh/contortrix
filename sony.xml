@@ -5,17 +5,20 @@
          fetch="ssh://git@github.com:"
          revision="refs/heads/nougat-release" />
 
+<remove-project name="platform/external/tinyalsa" />
+<remove-project name="platform/external/tinycompress" />
 <remove-project name="platform/external/toybox" />
+<remove-project name="platform/hardware/qcom/audio" />
 <remove-project name="platform/hardware/qcom/camera" />
 <remove-project name="platform/hardware/qcom/display" />
 <remove-project name="platform/hardware/qcom/keymaster" />
+<remove-project name="platform/hardware/qcom/media" />
 
 <!-- Material Music -->
 <remove-project name="copperheados/platform_packages_apps_Music" />
 <project path="packages/apps/Music"  name="Contortrix/packages-apps-CopperMusic" remote="github" />
 
 <!-- marshmallow-dr1.6-release is based on LA.BR.1.3.3_rb2.14 -->
-<project path="device/sony/common-headers" name="sonyxperiadev/device-sony-common-headers" remote="github" revision="aosp/LA.BR.1.3.3_rb2.14" />
 <project path="kernel/sony/msm"            name="Contortrix/kernel-sony-msm"               remote="github" />
 
 <!-- Sepolicy -->
@@ -42,10 +45,14 @@
 <project path="device/sony/karin_windy" name="sonyxperiadev/device-sony-karin_windy" remote="github" revision="master" />
 
 <!-- Hardware -->
+<project path="external/tinyalsa"          name="Contortrix/external-tinyalsa"          remote="github" />
+<project path="external/tinycompress"      name="Contortrix/external-tinycompress"      remote="github" />
 <project path="external/toybox"            name="Contortrix/external-toybox"            remote="github" />
+<project path="hardware/qcom/audio"        name="Contortrix/hardware-qcom-audio"        remote="github" />
 <project path="hardware/qcom/camera"       name="Contortrix/hardware-qcom-camera"       remote="github" />
 <project path="hardware/qcom/display"      name="Contortrix/hardware-qcom-display"      remote="github" />
 <project path="hardware/qcom/keymaster"    name="Contortrix/hardware-qcom-keymaster"    remote="github" />
+<project path="hardware/qcom/media"        name="Contortrix/hardware-qcom-media"        remote="github" />
 <project path="hardware/sony/dataservices" name="Contortrix/hardware-sony-dataservices" remote="github" />
 <project path="hardware/sony/thermanager"  name="sonyxperiadev/thermanager"             remote="github" revision="master" />
 <project path="hardware/sony/macaddrsetup" name="sonyxperiadev/macaddrsetup"            remote="github" revision="master" />
