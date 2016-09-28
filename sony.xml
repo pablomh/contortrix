@@ -18,24 +18,16 @@
 <remove-project name="copperheados/platform_packages_apps_Music" />
 <project path="packages/apps/Music"  name="Contortrix/packages-apps-CopperMusic" remote="github" />
 
-<!-- marshmallow-dr1.6-release is based on LA.BR.1.3.3_rb2.14 -->
-<project path="kernel/sony/msm"            name="Contortrix/kernel-sony-msm"               remote="github" />
-
-<!-- Sepolicy -->
-<!--
-<project path="device/qcom/sepolicy" name="Contortrix/device-qcom-sepolicy" remote="github" />
--->
+<!-- nougat-release is currently based on LA.BR.1.3.3_rb2.14 -->
 <project path="device/sony/sepolicy" name="Contortrix/device-sony-sepolicy" remote="github" />
-
-<!-- Common -->
-<project path="device/sony/common-init" name="sonyxperiadev/device-sony-common-init" remote="github" revision="master" />
-<project path="contortrix"              name="Contortrix/contortrix"                 remote="github" >
+<project path="device/sony/common"   name="Contortrix/device-sony-common"   remote="github" />
+<project path="kernel/sony/msm"      name="Contortrix/kernel-sony-msm"      remote="github" />
+<project path="contortrix"           name="Contortrix/contortrix"           remote="github"  >
     <copyfile src="a2a.sh" dest="a2a.sh" />
     <copyfile src="bld.sh" dest="bld.sh" />
 </project>
 
 <!-- Kitakami -->
-<project path="device/sony/common"      name="Contortrix/device-sony-common"         remote="github" />
 <project path="device/sony/kitakami"    name="Contortrix/device-sony-kitakami"       remote="github" />
 <project path="device/sony/satsuki"     name="sonyxperiadev/device-sony-satsuki"     remote="github" revision="master" />
 <project path="device/sony/sumire"      name="sonyxperiadev/device-sony-sumire"      remote="github" revision="master" />
@@ -44,7 +36,7 @@
 <project path="device/sony/karin"       name="sonyxperiadev/device-sony-karin"       remote="github" revision="master" />
 <project path="device/sony/karin_windy" name="sonyxperiadev/device-sony-karin_windy" remote="github" revision="master" />
 
-<!-- Hardware -->
+<!-- Qcom Hardware -->
 <project path="external/tinyalsa"          name="Contortrix/external-tinyalsa"          remote="github" />
 <project path="external/tinycompress"      name="Contortrix/external-tinycompress"      remote="github" />
 <project path="external/toybox"            name="Contortrix/external-toybox"            remote="github" />
@@ -54,6 +46,9 @@
 <project path="hardware/qcom/keymaster"    name="Contortrix/hardware-qcom-keymaster"    remote="github" />
 <project path="hardware/qcom/media"        name="Contortrix/hardware-qcom-media"        remote="github" />
 <project path="hardware/sony/dataservices" name="Contortrix/hardware-sony-dataservices" remote="github" />
+
+<!-- Sony Hardware -->
+<project path="hardware/sony/init"         name="sonyxperiadev/device-sony-common-init" remote="github" revision="master" />
 <project path="hardware/sony/thermanager"  name="sonyxperiadev/thermanager"             remote="github" revision="master" />
 <project path="hardware/sony/macaddrsetup" name="sonyxperiadev/macaddrsetup"            remote="github" revision="master" />
 <project path="hardware/sony/timekeep"     name="sonyxperiadev/timekeep"                remote="github" revision="master" />
