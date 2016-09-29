@@ -42,6 +42,10 @@
 <project path="device/sony/karin"       name="sonyxperiadev/device-sony-karin"       remote="github" revision="master" />
 <project path="device/sony/karin_windy" name="sonyxperiadev/device-sony-karin_windy" remote="github" revision="master" />
 
+<!-- Kanuti -->
+<project path="device/sony/kanuti"  name="sonyxperiadev/device-sony-kanuti"    remote="github" revision="master" />
+<project path="device/sony/tulip"   name="sonyxperiadev/device-sony-tulip"     remote="github" revision="master" />
+
 <!-- Qcom Hardware -->
 <project path="external/tinyalsa"          name="Contortrix/external-tinyalsa"          remote="github" />
 <project path="external/tinycompress"      name="Contortrix/external-tinycompress"      remote="github" />
